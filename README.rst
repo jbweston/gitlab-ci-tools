@@ -95,3 +95,14 @@ documents::
       artifacts:
         paths:
           - diff_doc.pdf
+
+Contributing
+------------
+I would be happy to add more tools here, not just ones that I find useful.
+It would be good if the script were to follow a similar structure to the
+existing ones (i.e. provide a ``main()`` function, and expose a command line
+that can be driven with command-line options or with environment variables),
+but I am happy to guide anyone through this process if need be.
+
+Once there is more than a single script we can start to think about how best
+to separate out common functionlity so that we can reduce boilerplate.
