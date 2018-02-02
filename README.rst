@@ -2,6 +2,11 @@ Gitlab CI Tools
 ===============
 .. badges-start
 
+
+.. image:: https://gitlab.com/jbweston/gitlab-ci-tools/badges/master/build.svg
+   :target: https://gitlab.com/jbweston/gitlab-ci-tools/badges/master/build.svg
+   :alt: Build status
+
 .. image:: https://img.shields.io/pypi/l/gitlab-ci-tools.svg
    :target: https://img.shields.io/pypi/l/gitlab-ci-tools.svg
    :alt: License
