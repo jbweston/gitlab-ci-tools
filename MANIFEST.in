@@ -1,2 +1,3 @@
 include versioneer.py
 include gitlab_ci_tools/_version.py
+include LICENSE
