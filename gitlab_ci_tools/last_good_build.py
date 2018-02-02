@@ -39,8 +39,6 @@ def args_from_env():
     return SimpleNamespace(
         project=env['CI_PROJECT_PATH'],
         branch=env['CI_COMMIT_REF_NAME'],
-        # This might not be defined if the user of the skeleton is not
-        # sufficiently privileged.
         token=env.get('GITLAB_API_TOKEN'),
         gitlab=gitlab_url,
     )
