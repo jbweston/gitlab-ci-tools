@@ -76,3 +76,22 @@ authenticated API access from within CI runners.
 
 List of Tools
 -------------
+
+``last-good-build``
+~~~~~~~~~~~~~~~~~~~
+Print the Git hash of the last successful build for the current branch.
+An useful example would be generating a PDF of the diff between two Latex
+documents::
+
+    before_script:
+      pip install gitlab-ci-tools
+      LAST_GOOD_BUILD=$(last-good-build || echo '')
+
+    report diff:
+      script:
+        - git show $LAST_GOOD_BUILD:important_doc.tex > old_doc.tex
+        - latexdiff old_doc.tex important_doc.tex > diff_doc.tex
+        - latexmk -pdf diff_doc.tex
+      artifacts:
+        paths:
+          - diff_doc.pdf

@@ -43,6 +43,7 @@ setup(
     },
     entry_points={
         'console_scripts': {
+            'last-good-build = gitlab_ci_tools.last_good_build:main',
         }
     },
 )
